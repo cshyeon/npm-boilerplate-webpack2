@@ -2,8 +2,9 @@
   "name": "package-name-your",
   "version": "0.0.3",
   "description": "npm NPM test package.",
-  "main": "./dist/main.js",
+  "main": "./dist/index.js",
   "scripts": {
+    "dev": "babel-node ./dev",
     "prepublishOnly": "npm run build",
     "build": "webpack --mode production",
     "test": "npm run nodejsTest && npm run browserTest",
